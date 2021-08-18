@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Objects</title>
+  <style>
+    label,
+    input {
+      color: purple;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 2em;
+    }
+
+    label {
+      display: block;
+    }
+
+    input {
+      border: 1px solid black;
+      margin-bottom: 20px;
+      width: 100%;
+    }
+
+    fieldset {
+      border: 1px solid #000;
+      width: 50%;
+      margin: 0 auto;
+    }
+
+    input[type="button"] {
+      background-color: lawngreen;
+    }
+
+    input[type="button"]:active {
+      background-color: #040;
+      color: #fff;
+    }
+
+    legend {
+      color: #000;
+      font-size: 2em;
+    }
+  </style>
+</head>
+
+<body>
+  <form action="" id="userInput">
+    <fieldset>
+      <legend>Movie Object</legend>
+      <label for="title">Favorite Movie</label>
+      <input type="text" id="title">
+      <br>
+      <label for="extra-name">Extra Information(name)</label>
+      <input type="text" id="extra-name">
+      <br>
+      <label for="">Extra Information(value)</label>
+      <input type="text" id="extra-value">
+      <br>
+      <input type="button" value="Add Move" id="addMoveBtn">
+    </fieldset>
+
+  </form>
+  <script>
+    let addMovie = document.querySelector("#addMoveBtn");
+    let movies = [];
+    let addMovieHandler = () => {
+      let title = document.querySelector('#title').value;
+      let extraName = document.querySelector('#extra-name').value;
+      let extraValue = document.querySelector('#extra-value').value;
+      //stop the function if a field is empty
+      if (title === "" || extraName === "" || extraValue === "") {
+        return;
+      }
+      let newMowie = {
+        info: {
+          title,
+          extraName,
+          extraValue
+        },
+        id: Math.random()
+      };
+      movies.push(newMovie);
+      //The New Object:
+      console.log(newMovie);
+      console.log(movies);
+    };
+
+    addMovie.addEventListener('click', addMovieHandler);
+  </script>
+</body>
+
+</html>

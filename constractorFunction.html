@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Constructor Function</title>
+</head>
+
+<body>
+  <script>
+    // Constructor Function
+    function User(name, email) {
+      this.name = name;
+      this.email = email;
+      this.online = false;
+      this.login = function () {
+        console.log(this.email + "Has Logged In");
+      };
+
+    }
+    let user1 = new User("David", "david@bigfoot.com");
+    let user2 = new User("Shoshana Arbeli Almozino", "shos@walla.com");
+
+    //Sample
+    function Car(status, model) {
+      this.status = status;
+      this.model = model;
+    }
+    let audi = new Car("New", "A6");
+    let subaro = new Car("Used", "Legacy");
+    let toyota = new Car("New", "Corola");
+  </script>
+</body>
+
+</html>

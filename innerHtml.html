@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inner HTML</title>
+    <script>
+        window.onload = function () {
+            document.getElementById("butt").addEventListener("click", change);
+        }
+
+        function change() {
+            let theH1 = document.getElementById("text");
+            theH1.style.color = "red";
+            theH1.style.fontsize = "5em";
+            document.body.style.backgroundColor = "orange";
+
+            //theH1.innerHtml = "Alice is Your Sister!";
+
+            if (theH1.innerHTML == " Alice is Your Sister! ") {
+                theH1.innerHTML = "Whos the F*** is Alice?"
+            } else if (theH1.innerHTML == "Whos the F*** is Alice?") {
+                theH1.innerHTML = " Alice is Your Sister! ";
+            }
+        }
+    </script>
+</head>
+
+<body>
+
+    <!--  h1#text{Whos the F*** is Alice?} -->
+    <h1 id="text">Whos the F*** is Alice?</h1>
+    <!-- button#butt{Hit me} -->
+    <button id="butt">Hit me</button>
+</body>
+
+</html>

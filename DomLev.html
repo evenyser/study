@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM Lev</title>
+  <style>
+    .list1 {
+      color: red;
+      font-size: 3em;
+      font-family: arial;
+    }
+
+
+    .list2 {
+      color: teal;
+    }
+  </style>
+</head>
+
+<body>
+
+  <img src="bob1.jpg" alt="Bob">
+  <img src="bob3.jpg" alt="Bob">
+  <a href="#">Google</a>
+  <a href="#">YouTube</a>
+  <a href="#">Facebook</a>
+  <!-- nav>ul>li*5{The Missing Link$} -->
+  <nav>
+    <ul id="boom">
+      <li class="list1">The Missing Link1</li>
+      <li class="list1">The Missing Link2</li>
+      <li class="list1">The Missing Link3</li>
+      <li class="list1">The Missing Link4</li>
+      <li class="list1">The Missing Link5</li>
+    </ul>
+  </nav>
+  <button id="theClick">Click</button>
+  <script>
+    let list = document.getElementsByClassName("list1");
+    let btn = document.getElementById("theClick");
+
+    btn.addEventListener("click", change);
+
+    function change() {
+      for (let i = 0; i < list.length; i++) {
+        list[i].style.color = "aqua";
+        console.log(list[i]);
+      }
+    };
+  </script>
+</body>
+
+</html>

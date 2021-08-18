@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DuplicateNames</title>
+</head>
+
+<body>
+  <script>
+    //remove Duplicate name from the Array();
+    let names = ['Judith', 'Muriel', 'Faustino', 'Ariel', 'Marcos', 'Crhistal', 'Cora', 'Marcos', 'Judith', 'Ariel'];
+    let compare;
+    //sort
+    names.sort();
+    //document.write(names)
+    //itrate Backward on the Array()
+    for (let i = names.length - 1; i >= 0; i--) {
+      compare = names[i];
+      if (compare === names[i - 1]) {
+        names.splice(i, 1);
+
+      }
+    }
+    console.log(`New Array ${names.toString()}`);
+    document.write(names.toString());
+  </script>
+
+</body>
+
+</html>

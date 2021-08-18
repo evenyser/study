@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Loop Use Her</title>
+</head>
+
+<body>
+
+    <form action="" name="forme">
+        <label for="">Enter Number of times to write Happy:</label>
+        <input type="text" name="user">
+        <br>
+        <input type="button" value="Hit me" onclick="go2()">
+    </form>
+
+    <script>
+        function go2() {
+            var num = document.forme.user.value;
+            for (var i = 1; i <= num; i = i + 1) {
+                document.write(i + ". Happy<br>");
+            }
+        }
+    </script>
+
+</body>
+
+</html>

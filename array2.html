@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Array2</title>
+</head>
+
+<body>
+
+
+  <script>
+    let talmidim = [];
+    console.log(talmidim);
+
+    talmidim = ["avi", "moshe", "dani"];
+    console.log(talmidim);
+
+    talmidim[3] = "moshe";
+    console.log(talmidim);
+
+    talmidim[8] = "Mria";
+    console.log(talmidim);
+    console.log(talmidim[7]);
+
+    //push add  a value at the end of the Array
+
+
+    talmidim.push("Dima");
+    console.log(talmidim);
+
+    //pop Removes a value from the End of the array
+    let a = talmidim.pop();
+    console.log(a);
+    console.log(talmidim);
+
+    /* add a value at the start of the Array */
+    talmidim.unshift("luba");
+    console.log(talmidim);
+
+    //shift remove a value at the start of the array
+    let b = talmidim.shift();
+    console.log(b);
+    console.log(talmidim);
+  </script>
+
+</body>
+
+</html>

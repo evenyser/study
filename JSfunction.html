@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS Functions</title>
+</head>
+
+<body>
+  <script>
+    /*function without parameters withhout a returning value*/
+    function go2() {
+      alert("boom");
+    }
+    go2();
+
+    /*function without parameters with areturning value*/
+
+    function go3() {
+      return "hi";
+    }
+    console.log(go3());
+
+    /* function with parameters without areturning value */
+    function color(theColor = "red") {
+      document.body.style.backgroundColor = theColor;
+      document.body.style.transition = "background-color 1.5s ease-in-out";
+    }
+    color("maroon");
+    /* Можно менять здесь цвет и он будет на странице */
+
+
+    function go4(num1 = 10, num2 = 20) {
+      return num1 * num2
+    }
+
+    console.log(go4(1000, 1000));
+  </script>
+</body>
+
+</html>

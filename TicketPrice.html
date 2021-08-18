@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket Price</title>
+</head>
+
+<body>
+    <!-- form>label+input+br+input:button -->
+    <form action="" name="forme">
+        <label>Enter Your Age To Check Ticket Price:</label>
+        <input type="text" name="user">
+        <br>
+        <input type="button" value="Check" onclick="check()">
+    </form>
+    <script>
+        function check() {
+            var age = document.forme.user.value;
+            //alert("The price is 70nis") or alert("The price is 150nis")
+
+            /* if (age < 12) {
+                alert("The price is 70nis");
+            } else {
+                alert("The price is 150nis");
+            }
+        }*/
+
+
+            if (age < 12) {
+                alert("Your price is 70 NIS");
+            } else if (age >= 12 && age < 65) {
+                alert("Your price is 150 NIS");
+            } else {
+                alert("Your price is 50 NIS");
+            }
+
+
+
+
+
+
+        }
+    </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tzikl2While</title>
+</head>
+
+<body>
+  <button onclick="f1()">go</button>
+  <p id="out"></p>
+
+  <script>
+    function f1() {
+      var p;
+      p = document.getElementById('out');
+      var i = 0;
+      /*  for (var i = 0; i <= 100; i++) {
+         p.innerHTML += i + ' ';
+       } */
+      /*  var i = 0;
+        while (i < 50) {
+          p.innerHTML += i + ' ';
+          i++;
+        }
+      } */
+      while (i < 50) {
+        i++;
+        p.innerHTML += i + ' ';
+      }
+    }
+  </script>
+
+
+</body>
+
+</html>

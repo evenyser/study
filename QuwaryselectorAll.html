@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quwary selector All</title>
+</head>
+
+<body>
+  <ul>
+    <li>boom shake it 1</li>
+    <li>boom shake it 2</li>
+    <li>boom shake it 3</li>
+    <li>boom shake it 4</li>
+    <li>boom shake it 5</li>
+    <li>boom shake it 6</li>
+    <li>boom shake it 7</li>
+    <li>boom shake it 8</li>
+    <li>boom shake it 9</li>
+    <li>boom shake it 10</li>
+  </ul>
+
+  <script>
+    let x = document.querySelectorAll("li");
+    x[2].style.fontSize = "3em";
+    x[5].style.fontSize = "3em";
+    x[7].style.fontSize = "3em";
+
+    for (let i = 0; x.length; i++) {
+      x[i].style.border = "1px dotted hotpink";
+    }
+  </script>
+</body>
+
+</html>

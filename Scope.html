@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope</title>
+</head>
+
+<body>
+    <script>
+        var c = 100;
+
+        function go2() {
+            var a = 10;
+            //var b = 20;
+            alert(a);
+        }
+
+        function go3() {
+            var b = 20;
+            alert(b);
+        }
+
+        function go4() {
+            alert(c);
+        }
+        go2();
+        go3();
+        go4();
+    </script>
+</body>
+
+</html>

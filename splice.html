@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Splice</title>
+</head>
+
+<body>
+  <script>
+    //Arrya.splice(index,howmany,item1,item2,....,item10);
+    //index - Required - number
+    //howmany - optional -->removen item
+    //items --> Optional -->add item
+
+    //at position 2 add item to the array   (matara shelanu)
+    let coffee = ["black", "late", "Mokachino", "caput chino"];
+
+    console.log(coffee);
+    let coffee2 = coffee.splice(2, 0, "mkia auto", "Ness");
+    console.log(coffee2);
+
+    //at position 2 add an item, and remove one item
+    let coffee3 = ["black", "late", "Mokachino", "caput chino"];
+    let coffee4 = coffee3.splice(2, 1, "lemon");
+    //splice(pos,remove,add)
+    console.log(coffee3, coffee4);
+
+    //at position 2 remove 2 items
+
+    let coffee5 = ["black", "late", "mokachino", "caput chino"];
+    let coffee6 = coffee5.splice(2, 2, "lemon", "avocado", "Benzin");
+    //splice(pos,remove,add);
+    console.log(coffee5, coffee6);
+  </script>
+</body>
+
+</html>

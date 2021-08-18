@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch
+
+    </title>
+</head>
+
+<body>
+    <!--Admin: pass:"123"
+    Power user:"345"
+    user:"567"-->
+    <!-- form>label+input+br+input:button -->
+
+
+    <form action="" name="forme">
+        <label for="">Enter Password:</label>
+        <input type="text" name="user">
+        <br>
+        <input type="button" value="Enter Site" onclick="go2()">
+    </form>
+    <script>
+        function go2() {
+            var pass = document.forme.user.value;
+            switch (pass) {
+                case "123":
+                    document.location = "http://www.google.com";
+                    break;
+                case "345":
+                    document.location = "http://www.youtube.com";
+                    break;
+                case "567":
+                    document.location = "http://www.facebook.com";
+                    break;
+                default:
+                    document.location = "http://www.bing.com";
+
+            }
+        }
+    </script>
+
+</body>
+
+
+</html>

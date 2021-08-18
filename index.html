@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+
+        .header {
+            background-color: aqua;
+            width: 99%;
+            height: 120px;
+            border: 1px solid black;
+            margin: 10px;
+            position: relative;
+
+        }
+
+        .logo {
+            color: brown;
+            margin-left: 300px;
+            line-height: 1;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 2em;
+
+        }
+
+        .menubar {
+            position: absolute;
+            width: 700px;
+            height: 50px;
+            background-color: rgb(71, 41, 180);
+            left: 600px;
+        }
+
+        .ul {
+            list-style-type: none;
+        }
+
+        nav ul li a {
+
+            padding: 10px 00px;
+            display: inline-block;
+            line-height: 2;
+            text-decoration: none;
+            font-size: 14pt;
+            font-family: ariel, "Helvetica Neue", Helvetica, sans-serif;
+            color: #000;
+
+
+
+        }
+
+        .li {
+
+            display: inline-block;
+            color: #000;
+            padding: 30px;
+
+
+        }
+
+        .content {
+            background-color: rgb(114, 135, 179);
+            width: 60%;
+            min-height: 500px;
+            position: absolute;
+            left: 20%;
+            margin: 5px 5px 5px 5px;
+            padding: 0;
+            border: 1px solid black;
+
+
+        }
+
+        .sidebar1 {
+            background-color: aqua;
+            width: 19%;
+            min-height: 500px;
+            position: relative;
+            flex-direction: column;
+            float: left;
+            left: 5px;
+            margin: 5px 5px 5px 5px;
+            padding: 10px;
+            border: 1px solid black;
+            padding: 5px;
+
+
+
+        }
+
+        .sidebar2 {
+            background-color: aqua;
+            width: 19%;
+            min-height: 500px;
+            position: relative;
+            flex-direction: column;
+            border: 1px solid black;
+            float: right;
+            margin: 5px 0px 5px 5px;
+            padding: 5px;
+
+
+        }
+
+        .fouter {
+            background-color: aqua;
+            width: 99%;
+            height: 120px;
+            border: 1px solid black;
+            float: left;
+            margin: 10px;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="logo">
+            <h1>Kinomonster</h1>
+        </div>
+        <div class="menubar">
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Media</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="content"></div>
+    <div class="sidebar1"></div>
+    <div class="sidebar2"></div>
+    <div class="fouter">
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Media</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    </div>
+
+</body>
+
+</html>

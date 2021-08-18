@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ThiklWhile2</title>
+</head>
+
+<body>
+  <button onclick="f1()">go</button>
+  <p id="out"></p>
+  <p id="out1"></p>
+
+  <script>
+    function f1() {
+      var p, p1;
+      p = document.getElementById('out');
+      p1 = document.getElementById('out1');
+      var i = 0;
+      while (i < 50) {
+        i++;
+        p.innerHTML += i + ' ';
+
+      }
+
+      var j = 100;
+      do {
+        p1.innerHTML += j + ' , ';
+        j--;
+
+      }
+      while (j > 0);
+    }
+  </script>
+
+</body>
+
+</html>

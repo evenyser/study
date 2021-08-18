@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock start</title>
+    <style>
+        button {
+            background-color: goldenrod;
+            width: 60px;
+            height: 30px;
+            margin: 10px;
+            float: left;
+
+
+
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+    <form action="" name="forme">
+        <input type="text" name="clock">
+        <br<br>
+            <input type="button" value="Start" onclick="start">
+            <input type="button" value="Stop" onclick="sto">
+    </form>
+
+
+
+
+
+
+
+    <script>
+        var interval;
+
+
+        function runClock() {
+            var currentTime = new Date();
+            var formattedHR = currentTime.getHours() < 11 ? "AM  " + currentTime.getHours() : "PM  " + (
+                currentTime
+                .getHours() - 12); // adding AM PM hour representation
+            var formattedMin = currentTime.getMinutes() < 10 ? "0" + currentTime.getMinutes() : currentTime
+                .getMinutes(); // 2 digit minutes
+            var formattedSec = currentTime.getSeconds() < 10 ? "0" + currentTime.getSeconds() : currentTime
+                .getSeconds(); // 2 digit seconds
+            var formattedTime = formattedHR + " : " + formattedMin + " : " + formattedSec;
+            document.forme.clock.value = formattedTime;
+
+
+
+        }
+
+        function start() {
+
+            intervalId = setInterval(runClock, 1000);
+        }
+
+
+        function sto() {
+
+            clearInterval(interval);
+        }
+    </script>
+</body>
+
+</html>

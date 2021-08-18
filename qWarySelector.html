@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, quam!</p>
+  <div class="new">New Div</div>
+  <p id="text">The Text</p>
+
+  <section>
+    <h2>The section</h2>
+    <article>
+      <h2>The article</h2>
+      <img src="bob5.jpg" alt="">
+      <img src="bob5.jpg" alt="">
+      <img src="bob5.jpg" alt="">
+      <img src="bob5.jpg" alt="">
+    </article>
+  </section>
+  <script>
+    document.querySelector("p").style.color = "red";
+    document.querySelector(".new").style.color = "teal";
+    document.querySelector("#text").style.color = "yellow";
+    document.querySelector("p[id='text']").style.fontsize = "3em";
+    document.querySelector("article > img:nth-child(3)").style.width = "300px";
+  </script>
+
+  </body>
+
+</html>

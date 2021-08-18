@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clouser</title>
+</head>
+
+<body>
+  <button id="item1">Click me</button><br>
+  <button id="item2">Click me</button>
+  <script>
+    (function () {
+      let itm1 = document.querySelector("#item1");
+      let itm2 = document.querySelector("#item2");
+      let count = 0;
+
+      let print = () => {
+        console.log(count);
+      }
+
+      itm1.addEventListener('click', function () {
+
+        count++;
+        print();
+      })
+
+
+      itm2.addEventListener('click', function () {
+        count++;
+        print();
+      })
+    }());
+  </script>
+</body>
+
+</html>

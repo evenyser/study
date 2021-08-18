@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Massive</title>
+</head>
+
+<body>
+  <input type="text" id="il">
+  <button onclick="p1()">push</button>
+  <button onclick="p2()">pop</button>
+  <hr>
+  <p id="out"></p>
+
+  <script>
+    //pustoi massive
+    var m = [];
+    //------------
+    var m1 = [99, 56, 'Hello'];
+    // console.log(m1[2]);
+    m1[3] = 444;
+    m1[4] = 444444;
+    console.log(m1);
+    //alert(m1.length);
+
+    /* for (var i = 0; i < m1.length; i++) {
+     document.getElementById('out').innerHTML += m1[i] + "<br>";
+    } */
+
+    function masOut() {
+      var p = document.getElementById('out');
+      var str = ' ';
+      for (var i = 0; i < m1.length; i++) {
+        str += i + '---' + m1[i] + '<br>';
+      }
+
+
+      p.innerHTML = str;
+    }
+
+    //--------
+
+    masOut();
+
+    function p1() {
+      var il = document.getElementById('il').value;
+      m1.push(il);
+      masOut();
+    }
+
+    function p2() {
+      m1.pop();
+      masOut();
+    }
+  </script>
+
+</body>
+
+</html>

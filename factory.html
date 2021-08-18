@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Factory</title>
+</head>
+
+<body>
+  <script>
+    function creatAddress(name, street, city) {
+      return {
+        name,
+        street,
+        city
+      };
+    };
+    const addr = creatAddress("Avi", "Ben Gurion 8", "Afula");
+    const addr2 = creatAddress("Dona", "Washington", "New York");
+  </script>
+</body>
+
+</html>

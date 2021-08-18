@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Targil</title>
+</head>
+
+<body>
+  <br>
+  <img src="" alt="" id="pica">
+
+  <script>
+    let flag = 0;
+
+    function anim() {
+      let bob = ["bob1.jpg", "bob2.jpg", "bob3.jpg", "bob4.jpg", "bob5.jpg"];
+      let sara = document.getElementById("pica");
+      if (flag < bob.length) {
+        sara.src = bob[flag];
+        flag++;
+        console.log(flag);
+
+      } else {
+        flag = 0;
+      }
+      setTimeout(anim, 1500);
+    }
+    anim();
+  </script>
+
+</body>
+
+
+</html>

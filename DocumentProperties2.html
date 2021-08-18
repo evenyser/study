@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Properties 2</title>
+</head>
+
+<body>
+    <button onclick="changeColor('red','yellow')">RED</button>
+    <button onclick="changeColor('green','lime')">Green</button>
+    <button onclick="changeColor('blue','white')">BLUE</button>
+    <script>
+        function changeColor(color, text) {
+            document.bgColor = color;
+            document.fgColor = text;
+        }
+        /* function red() {
+             document.bgColor = "red";
+         }
+
+         function green() {
+             document.bgColor = "green";
+         }
+
+         function blue() {
+             document.bgColor = "blue";
+         }*/
+    </script>
+</body>
+
+</html>

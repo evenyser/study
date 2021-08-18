@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IFFE exisise</title>
+</head>
+
+<body>
+  <script>
+    //create 3 IFFE Functions
+    //Create a Function that add two numbers and assign it to a variable
+
+    let firstNum = function (num1, num2) {
+      return num1 + num2;
+    }(10, 45);
+
+    //create a function that Multiplies the Privious number by itself and second variable
+
+    var secondNum = function () {
+      return firstNum * firstNum;
+    }();
+
+    //create a function that prit to console the variable that contains the previous function
+    (function () {
+      console.log(secondNam);
+    }());
+  </script>
+
+
+</body>
+
+</html>

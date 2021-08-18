@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add to Array</title>
+</head>
+
+<body>
+  <form action="">
+    <label for="">Write Fruit name and click</label>
+    <input type="text" id="user">
+    <br>
+    <input type="button" value="Add Fruit" id="theClick">
+  </form>
+  <script>
+    document.getElementById("theClick").addEventListener("click", pri);
+    let arr = [];
+
+    function pri() {
+      let him = document.getElementById("user").value;
+      arr.push(him);
+      console.log(arr);
+    }
+  </script>
+</body>
+
+</html>

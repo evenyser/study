@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>This Normal Function</title>
+</head>
+
+<body>
+  <script>
+    let theName = "Global";
+
+    let go2 = function () {
+      let theName = "go2";
+      console.log("From go2 ------>");
+      console.log(this);
+      console.log(this.theName);
+    }
+  </script>
+
+</body>
+
+</html>

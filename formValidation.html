@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Validation</title>
+</head>
+
+<body>
+
+  <!-- form>(label+input+br)*2+input:button -->
+  <form action="">
+    <label for="">Name:</label>
+    <input type="text" id="usern"><span id="err1"></span>
+    <br>
+    <label for="">Email</label>
+    <input type="text" id="usere"><span id="err2"></span>
+    <br>
+    <input type="button" value="Click" id="theClick">
+  </form>
+  <script>
+    document.getElementById("theClick").addEventListener("click", check);
+    let forma = document.getElementById("usern").focus();
+
+    function check() {
+      let nuser = document.getElementById("usern");
+      let euser = document.getElementById("usere");
+      let errn = document.getElementById("err1");
+      let erre = document.getElementById("err2");
+
+      if (nuser.value == "") {
+        errn.innerHTML = " * Enter Name PLZ!"
+        errn.style.color = "red";
+        nuser.focus();
+      }
+      if (euser.value == "") {
+        alert("Enter He male PLZ");
+        euser.focus();
+      }
+    }
+  </script>
+</body>
+
+</html>

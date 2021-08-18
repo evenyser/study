@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShinBetSplice</title>
+</head>
+
+<body>
+  <script>
+    /*  let names = ["Moshe", "Avi", "Roman", "Lera", "Moshe", "Itamar", "Lera", "Doron", "Ben", "Evgeny"];
+    names.sort();
+    console.log(names);
+    let names2 = names.splice(6, 2);
+
+
+    console.log(names, names2); */
+    /* 
+        let mounth = 05;
+        let day = 24;
+        let year = 2020;
+        let itB = mounth + '/' + day + '/' + year;
+        document.write(itB); */
+
+    let theDate = new Date(),
+      mounth = theDate.getMonth(),
+      year = theDate.getFullYear(),
+      date = theDate.getDate();
+
+    let american = `Today is ${month+1}/${date}/${year}`;
+    console.log(american);
+  </script>
+
+
+
+</body>
+
+</html>

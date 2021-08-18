@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BRACKETS PROPERTIES</title>
+</head>
+
+<body>
+  <script>
+    let user1 = {
+      firstName: "Toni",
+      lastName: "Bler",
+      fullName: function () {
+        return this.firstName + " " + this.lastName;
+      }
+    };
+
+    user1["age"] = 35;
+
+    //Use Case
+    let user3 = {
+      123: "digit",
+      "123digit": "Doesnt start with Digit",
+      name123: "Doesnt start with Digit",
+      $name: "$ sign",
+      "name - 123": "hypen",
+      Name: "upper Case",
+      name: "lower Case"
+    };
+
+    //user3. 123 Syntax Error
+    user3[123];
+    user3["123 Digit"] = "Banana";
+
+    //Use Case
+    let customer = {
+      add0: "Jabotinski",
+      add1: 154,
+      add2: "Ramat Gan"
+    };
+    let address = "";
+    for (let i = 0; i < 3; i++) {
+      address += customer["add" + i] + "\n";
+    }
+    alert(address);
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>practic2</title>
+</head>
+
+<body>
+  <form action="" name="forma">
+    <label for="">First Name:</label>
+    <input type="text" name="fs">
+    <br><br>
+
+    <label for="">Last Name:</label>
+    <input type="text" name="ls">
+    <br><br>
+    <input type="button" value="CLICK" onclick="theUser()">
+
+  </form>
+  <script>
+    function theUser() {
+      var fn = document.forma.fs.value;
+      var ln = document.forma.ls.value;
+      alert("Hello" + " " + fn + " " + ln + " " + "Welcome");
+      //document.write("Hello" + " " + fn + " " + ln + " " +
+      //   "Welcome");
+      document.write("Hello <span style='color: teal; font-size:1.5em;'>" + fn +
+        "</span> <span style='color:orange; font-size:2em;' " + ln.fontcolor("orange") +
+        "</span>, Welcome!")
+
+
+      console.log(fn + ln);
+    }
+  </script>
+
+</body>
+
+</html>

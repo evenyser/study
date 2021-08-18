@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS Images Array</title>
+</head>
+
+<body>
+  <br>
+  <img src="" alt="" id="pica">
+  <script>
+    function changePic() {
+      let bob = ["bob1.jpg", "bob2.jpg", "bob3.jpg", "bob4.jpg", "bob5.jpg"];
+      let num = bob[Math.floor(Math.random() * bob.length)];
+      document.getElementById("pica").src = num;
+    }
+    changePic()
+  </script>
+</body>
+
+</html>
